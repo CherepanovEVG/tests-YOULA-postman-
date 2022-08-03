@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "21f0a973-647e-48b0-9045-30b0176d26fa",
+		"name": "ProjectGB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18957003"
+	},
+	"item": [
+		{
+			"name": "/products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "edf715c37574ffa4e6fe740b187eda2d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.youla.io/api/v1/products",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "edf715c37574ffa4e6fe740b187eda2d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/6230666752ad832a9f5f4b81",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"6230666752ad832a9f5f4b81"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "edf715c37574ffa4e6fe740b187eda2d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{first_name: \"sfsfr\", last_name: \"sdssg\", image: \"6230666752ad832a9f5f4b83-1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/user/6230666752ad832a9f5f4b81",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"6230666752ad832a9f5f4b81"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user Copy 2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"accept": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "edf715c37574ffa4e6fe740b187eda2d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{first_name: \"sfsfr\", last_name: \"sdssg\", image: \"6230666752ad832a9f5f4b83-1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.youla.io/api/v1/image",
+					"protocol": "https",
+					"host": [
+						"api",
+						"youla",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
